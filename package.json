@@ -2,6 +2,9 @@
   "name": "02-api-rest-nodejs",
   "version": "1.0.0",
   "main": "index.js",
+  "engines": {
+    "node": ">= 18"
+  },
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "knex": "node --no-warnings --import tsx ./node_modules/.bin/knex",
@@ -22,6 +25,7 @@
     "tsup": "^8.5.0",
     "tsx": "^4.20.3",
     "typescript": "^5.8.3",
+    "sqlite3": "^5.1.7",
     "vitest": "^3.2.4"
   },
   "dependencies": {
@@ -29,7 +33,7 @@
     "dotenv": "^17.2.0",
     "fastify": "^5.4.0",
     "knex": "^3.1.0",
-    "sqlite3": "^5.1.7",
+    "pg": "^8.16.3",
     "zod": "^4.0.5"
   }
 }
